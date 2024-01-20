@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 model = joblib.load("train_model.pkl")
 scaler = StandardScaler()
-
+# comment
 @app.route('/')
 def home():
     return render_template('index.html')
